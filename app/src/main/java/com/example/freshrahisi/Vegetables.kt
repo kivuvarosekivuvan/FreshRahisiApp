@@ -14,7 +14,7 @@ class Vegetables : AppCompatActivity() {
         setContentView(R.layout.activity_vegetables)
         btnBack1 = findViewById(R.id.btnBack1)
         btnBack1.setOnClickListener {
-            val intent= Intent(this, MainActivity::class.java)
+            val intent= Intent(this, Category::class.java)
             startActivity(intent)
         }
 
