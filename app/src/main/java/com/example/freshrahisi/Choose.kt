@@ -13,7 +13,7 @@ class Choose : AppCompatActivity() {
         setContentView(R.layout.activity_choose)
         btnMama=findViewById(R.id.btnMama)
         btnMama.setOnClickListener {
-            val intent = Intent(this,Loginmama::class.java)
+            val intent = Intent(this,MamaMboga::class.java)
             startActivity(intent)
         }
         btnCustomer=findViewById(R.id.btnCustomer)

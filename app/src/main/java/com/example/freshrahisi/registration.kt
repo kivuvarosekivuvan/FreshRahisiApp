@@ -12,8 +12,7 @@ class registration : AppCompatActivity() {
         setContentView(R.layout.activity_registration)
         btnSubmit=findViewById(R.id.btnSubmit)
         btnSubmit.setOnClickListener {
-            var intent= Intent( this, Loginmama::class.java)
+            var intent= Intent( this, MamaMboga::class.java)
             startActivity(intent)
         }
-    }
-}
+    }}
