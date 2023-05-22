@@ -39,7 +39,7 @@ class Category : AppCompatActivity() {
             val intent3 = Intent(this,Cereals::class.java)
             startActivity(intent3)
         }
-        tvSpices = findViewById(R.id.tvCereals)
+        tvSpices = findViewById(R.id.tvSpices)
         tvSpices.setOnClickListener {
             val intent4  = Intent(this,Spices::class.java)
             startActivity(intent4)

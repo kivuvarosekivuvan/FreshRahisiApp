@@ -26,7 +26,7 @@ class Signup : AppCompatActivity() {
 
             override fun onCreate(savedInstanceState: Bundle?) {
                 super.onCreate(savedInstanceState)
-//                setContentView(binding.)
+                setContentView(R.layout.activity_signup)
 
             }
 

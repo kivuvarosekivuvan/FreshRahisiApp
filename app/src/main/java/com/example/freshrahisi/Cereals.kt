@@ -8,7 +8,7 @@ import android.widget.Button
 class Cereals : AppCompatActivity() {
     lateinit var btnBack3 : Button
     lateinit var btnMaize : Button
-    lateinit var btnWheat : Button
+    lateinit var btnMaize2: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cereals)
@@ -19,6 +19,12 @@ class Cereals : AppCompatActivity() {
         }
         btnMaize = findViewById(R.id.btnMaize)
         btnMaize.setOnClickListener {
+            val intent2 = Intent(this, Cart::class.java)
+            startActivity(intent2)
+        }
+
+        btnMaize2 = findViewById(R.id.btnMaize2)
+        btnMaize2.setOnClickListener {
             val intent2 = Intent(this, Cart::class.java)
             startActivity(intent2)
         }

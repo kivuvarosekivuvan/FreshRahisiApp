@@ -9,6 +9,7 @@ class fruits : AppCompatActivity() {
     lateinit var btnBack2 : Button
     lateinit var btnBanana : Button
     lateinit var btnOrange : Button
+    lateinit var btnOrange2: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fruits)
@@ -19,6 +20,13 @@ class fruits : AppCompatActivity() {
         }
         btnOrange = findViewById(R.id.btnOrange)
         btnOrange.setOnClickListener {
+            val intent3 = Intent(this,Cart::class.java)
+            startActivity(intent3)
+        }
+
+
+        btnOrange2 = findViewById(R.id.btnOrange2)
+        btnOrange2.setOnClickListener {
             val intent3 = Intent(this,Cart::class.java)
             startActivity(intent3)
         }

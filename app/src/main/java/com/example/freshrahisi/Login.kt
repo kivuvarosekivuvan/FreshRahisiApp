@@ -3,37 +3,53 @@ package com.example.freshrahisi
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.widget.Button
-import android.widget.Toast
-import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
+import com.example.freshrahisi.databinding.ActivityLoginBinding
+
 
 class Login : AppCompatActivity() {
-    lateinit var btnSignup1: Button
-    lateinit var btnLogIn: Button
-    lateinit var tilEmail: TextInputLayout
-    lateinit var tilPassword: TextInputLayout
-    lateinit var etEmail: TextInputEditText
-    lateinit var etPassword: TextInputEditText
+    lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        binding = ActivityLoginBinding.inflate(layoutInflater)       //this is important
+        setContentView(binding.root)
 
 
-        btnSignup1 = findViewById(R.id.btnSignup1)
-        btnSignup1.setOnClickListener {
+        binding.btnSignup1.setOnClickListener {
             val intent = Intent(this, Signup::class.java)
             startActivity(intent)
         }
-        btnLogIn = findViewById(R.id.btnLogIn)
-        btnLogIn.setOnClickListener {
-
-
-            val intent1 = Intent(this, Category::class.java)
-            startActivity(intent1)
+        binding.btnLogIn.setOnClickListener {
+            validateLogIn()
+            clearErrors()
 
         }
 
-        }
     }
+
+
+    fun validateLogIn() {
+        val email = binding.etEmail.text.toString()
+        val password = binding.etPassword.text.toString()
+        var error = false
+
+        if (email.isBlank()) {
+            binding.tilEmail.error = "Email is required"
+            error = true
+        }
+        if (password.isBlank()) {
+            binding.tilPassword.error = "Password is required"
+            error = true
+        }
+        if (!error){
+           val intent=Intent(this, Category::class.java)
+            startActivity(intent)
+        }
+
+    }
+    fun clearErrors(){
+        binding.tilEmail.error= null
+        binding.tilPassword.error= null
+
+    }
+}
+
