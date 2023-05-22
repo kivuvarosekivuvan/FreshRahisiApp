@@ -5,6 +5,7 @@
     android:id="@+id/tvOrders"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ECE5E5"
     tools:context=".ManageOrders">
 
     <TextView
@@ -16,7 +17,9 @@
         android:layout_marginEnd="16dp"
         android:text="Customer Orders"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#195314"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,14 +28,14 @@
         android:id="@+id/btnCustomerA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="72dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="Customer A"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintHorizontal_bias="0.626"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -40,14 +43,14 @@
         android:id="@+id/btnCustomerB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="Customer B"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCustomerA" />
 
@@ -55,14 +58,14 @@
         android:id="@+id/btnCustomerC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="Customer C"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCustomerB" />
 
@@ -70,13 +73,13 @@
         android:id="@+id/btnCustomerD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="Customer D"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCustomerC" />
 </androidx.constraintlayout.widget.ConstraintLayout>

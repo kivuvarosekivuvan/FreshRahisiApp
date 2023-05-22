@@ -96,7 +96,7 @@
         android:layout_marginStart="153dp"
         android:layout_marginEnd="164dp"
         android:backgroundTint="#4AEC06"
-        android:text="CUSTOMER"
+        android:text="Get started"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.372"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ECE5E5"
     tools:context=".MamaMboga">
 
     <ImageView
@@ -18,8 +19,8 @@
 
     <ImageView
         android:id="@+id/ivImage1"
-        android:layout_width="233dp"
-        android:layout_height="94dp"
+        android:layout_width="234dp"
+        android:layout_height="89dp"
         android:layout_marginStart="98dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="80dp"
@@ -33,6 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="165dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="166dp"
         android:text="Fresh  Rahisi"
         android:textColor="@android:color/holo_green_light"
@@ -45,13 +47,11 @@
         android:id="@+id/tvText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="293dp"
+        android:layout_marginTop="36dp"
         android:text="Email"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvText" />
 
@@ -78,12 +78,11 @@
         android:id="@+id/tvPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="284dp"
+        android:layout_marginTop="16dp"
         android:text="Password"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilEmail" />
 
@@ -101,7 +100,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="47dp"
             android:background="@android:color/holo_green_light"
             android:hint=" Enter password" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -110,25 +109,25 @@
         android:id="@+id/btnLogin"
         android:layout_width="78dp"
         android:layout_height="39dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="268dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4AEC06"
         android:text="Login"
-        android:textColor="#FF0000 "
+        android:textColor="#F8F8F1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
 
     <Button
         android:id="@+id/btnRegistration"
-        android:layout_width="163dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="187dp"
+        android:layout_width="148dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#365BA3"
         android:text="Registration"
-        android:textColor="#FF0000 "
+        android:textColor="#EFEFE8"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 

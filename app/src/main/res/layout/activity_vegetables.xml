@@ -8,6 +8,17 @@
     tools:context=".Vegetables">
 
 
+    <Button
+        android:id="@+id/btnAddToCart3"
+        android:layout_width="111dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#FFC107"
+        android:text="Add to cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiscount2" />
+
     <TextView
         android:id="@+id/tvVegetable"
         android:layout_width="wrap_content"
@@ -140,15 +151,13 @@
 
     <Button
         android:id="@+id/btnAddToCart"
-        android:layout_width="193dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="91dp"
+        android:layout_width="111dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="252dp"
         android:backgroundTint="#FFC107"
         android:text="Add to cart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDiscount2" />
 
     <Button
