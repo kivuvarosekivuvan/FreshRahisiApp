@@ -4,18 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ECE5E5"
     tools:context=".Feedback">
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="68dp"
         android:text="Feedback"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#195314"
         android:textSize="29sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
         android:text="CustomerA:"
+        android:textColor="#195314"
         android:textColorHint="@color/black"
         android:textColorLink="@color/material_dynamic_neutral_variant0"
         android:textSize="34sp"
@@ -46,8 +50,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tvFeedback1"
-            android:layout_width="372dp"
-            android:layout_height="92dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
             android:hint="How was your shopping experience?"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -56,12 +60,13 @@
         android:id="@+id/textView17"
         android:layout_width="149dp"
         android:layout_height="50dp"
-        android:layout_marginTop="388dp"
+        android:layout_marginTop="392dp"
         android:text="CustomerB:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#195314"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -69,7 +74,7 @@
         android:layout_width="307dp"
         android:layout_height="84dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,8 +82,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tvFeedback2"
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_width="331dp"
+            android:layout_height="116dp"
             android:hint="Any feedback?"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </com.google.android.material.textfield.TextInputLayout>

@@ -12,9 +12,6 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)       //this is important
         setContentView(binding.root)
-        validateSignUp()
-        clearErrors()
-
 
 
         binding.btnSignup1.setOnClickListener {
@@ -22,17 +19,15 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnLogIn.setOnClickListener {
-
-
-            val intent1 = Intent(this, Category::class.java)
-            startActivity(intent1)
+            validateLogIn()
+            clearErrors()
 
         }
 
     }
 
 
-    fun validateSignUp() {
+    fun validateLogIn() {
         val email = binding.etEmail.text.toString()
         val password = binding.etPassword.text.toString()
         var error = false
@@ -45,11 +40,15 @@ class Login : AppCompatActivity() {
             binding.tilPassword.error = "Password is required"
             error = true
         }
+        if (!error){
+           val intent=Intent(this, Category::class.java)
+            startActivity(intent)
+        }
 
     }
     fun clearErrors(){
-        binding.etEmail.error= null
-        binding.etPassword.error= null
+        binding.tilEmail.error= null
+        binding.tilPassword.error= null
 
     }
 }

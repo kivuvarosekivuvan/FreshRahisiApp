@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ECE5E5"
     tools:context=".registration">
 
     <com.google.android.material.textfield.TextInputEditText
@@ -50,7 +51,7 @@
         android:id="@+id/etPhone"
         android:layout_width="240dp"
         android:layout_height="41dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="78dp"
         android:background="@android:color/holo_green_light"
@@ -67,8 +68,8 @@
         android:layout_marginTop="33dp"
         android:layout_marginEnd="175dp"
         android:text="Registration"
-        android:textSize="28dp"
         android:textColor="@android:color/holo_green_light"
+        android:textSize="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -77,10 +78,11 @@
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="132dp"
+        android:layout_marginEnd="24dp"
         android:text="Name"
         android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/tilName1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,8 +92,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
         android:text="Phone"
         android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/etPhone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
@@ -101,8 +105,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="68dp"
+        android:layout_marginEnd="12dp"
         android:text="Address"
         android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/etAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
 
@@ -112,8 +118,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="21dp"
         android:text="Email"
         android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/etEmail1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
 
@@ -121,10 +129,12 @@
         android:id="@+id/tvPassword1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
         android:text="Password"
         android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/etPassword2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
@@ -136,7 +146,7 @@
         android:layout_marginTop="51dp"
         android:layout_marginEnd="115dp"
         android:text="Submit"
-        android:textColor="#FF0000 "
+        android:textColor="#FAF9F0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword2" />
@@ -145,9 +155,8 @@
         android:id="@+id/tilName1"
         android:layout_width="241dp"
         android:layout_height="56dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginEnd="78dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/tvName"

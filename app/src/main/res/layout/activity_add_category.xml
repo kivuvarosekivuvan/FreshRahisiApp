@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ECE5E5"
     tools:context=".AddCategory">
 
     <TextView
@@ -16,8 +17,9 @@
         android:text="Category"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/holo_green_light"
+        android:textColor="#038309"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,13 +29,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="144dp"
         android:layout_marginEnd="16dp"
         android:text="Present Category"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#038309"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintHorizontal_bias="0.386"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,62 +70,62 @@
 
     <Button
         android:id="@+id/btnAddC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="146dp"
+        android:layout_height="36dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="Add category"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
     <Button
         android:id="@+id/btnDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="146dp"
+        android:layout_height="36dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="Delete Category"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAddC" />
 
     <Button
         android:id="@+id/btnAd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="136dp"
+        android:layout_height="37dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="305dp"
+        android:layout_marginTop="252dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:backgroundTint="#4684C1"
         android:text="Add Product"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toEndOf="@+id/btnAddC"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/btnDelPro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="146dp"
+        android:layout_height="36dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/material_dynamic_neutral90"
+        android:backgroundTint="#ED2213"
         android:text="Delete Product"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="#F3F1F1"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintHorizontal_bias="0.204"
         app:layout_constraintStart_toEndOf="@+id/btnDelete"
         app:layout_constraintTop_toBottomOf="@+id/btnAd" />
 </androidx.constraintlayout.widget.ConstraintLayout>

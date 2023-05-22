@@ -9,6 +9,7 @@ import com.example.freshrahisi.R.id.btnAddToCart
 class Vegetables : AppCompatActivity() {
     lateinit var btnBack1: Button
     lateinit var btnAddToCart:Button
+    lateinit var btnAddToCart3:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vegetables)
@@ -20,6 +21,12 @@ class Vegetables : AppCompatActivity() {
 
         btnAddToCart = findViewById(R.id.btnAddToCart)
         btnAddToCart.setOnClickListener {
+            val intent2 = Intent(this,Cart::class.java)
+            startActivity(intent2)
+        }
+
+        btnAddToCart3 = findViewById(R.id.btnAddToCart3)
+        btnAddToCart3.setOnClickListener {
             val intent2 = Intent(this,Cart::class.java)
             startActivity(intent2)
         }
