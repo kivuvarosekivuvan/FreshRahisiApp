@@ -12,7 +12,7 @@ class Mpesa : AppCompatActivity() {
         setContentView(R.layout.activity_mpesa)
         btnBackdelivery= findViewById(R.id.btnBackdelivery)
         btnBackdelivery.setOnClickListener {
-            val intent=Intent(this,DeliveryAddress::class.java)
+            val intent=Intent(this,Category::class.java)
             startActivity(intent)
         }
     }

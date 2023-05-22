@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class Category : AppCompatActivity() {
-
+lateinit var btnBack9: Button
     lateinit var ivLogo : ImageView
     lateinit var tvCategories : TextView
     lateinit var ivVegetables : ImageView
@@ -24,6 +24,13 @@ class Category : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_category)
+
+        btnBack9 = findViewById(R.id.btnBack9)
+        btnBack9.setOnClickListener {
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
+        }
+
         tvVegetables = findViewById(R.id.tvVegetables)
         tvVegetables.setOnClickListener {
             val intent = Intent(this,Vegetables::class.java)

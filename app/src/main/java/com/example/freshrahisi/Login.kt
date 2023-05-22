@@ -3,6 +3,7 @@ package com.example.freshrahisi
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.freshrahisi.databinding.ActivityLoginBinding
 
 
@@ -13,9 +14,8 @@ class Login : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)       //this is important
         setContentView(binding.root)
 
-
         binding.btnSignup1.setOnClickListener {
-            val intent = Intent(this, Signup::class.java)
+            val intent = Intent(this@Login, Signup::class.java)
             startActivity(intent)
         }
         binding.btnLogIn.setOnClickListener {
@@ -40,15 +40,18 @@ class Login : AppCompatActivity() {
             binding.tilPassword.error = "Password is required"
             error = true
         }
-        if (!error){
-           val intent=Intent(this, Category::class.java)
+        if (!error) {
+            val intent = Intent(this, Category::class.java)
             startActivity(intent)
+
+
         }
 
     }
-    fun clearErrors(){
-        binding.tilEmail.error= null
-        binding.tilPassword.error= null
+
+    fun clearErrors() {
+        binding.tilEmail.error = null
+        binding.tilPassword.error = null
 
     }
 }

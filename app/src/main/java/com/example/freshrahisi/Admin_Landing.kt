@@ -5,19 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class LandingPage: AppCompatActivity() {
-    private lateinit var btnManage:Button
-    private lateinit var btnAdd:Button
-    private lateinit var btnAddProduct:Button
-    private lateinit var btnCheck:Button
-    private lateinit var btnView:Button
+class Admin_Landing : AppCompatActivity() {
 
+    private lateinit var btnManage: Button
+    private lateinit var btnAdd: Button
+    private lateinit var btnAddProduct: Button
+    private lateinit var btnCheck: Button
+    private lateinit var btnView: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_landing_page)
-
-
-
+        setContentView(R.layout.activity_admin_landing)
 
 
 
@@ -30,26 +27,32 @@ class LandingPage: AppCompatActivity() {
 
         btnAdd=findViewById(R.id.btnAdd)
         btnAdd.setOnClickListener {
-            val intent=Intent(this,AddCategory::class.java)
+            val intent= Intent(this,AddCategory::class.java)
             startActivity(intent)
         }
 
         btnAddProduct=findViewById(R.id.btnAddproduct)
         btnAddProduct.setOnClickListener {
-            val intent=Intent(this,AddProduct::class.java)
+            val intent= Intent(this,AddProduct::class.java)
             startActivity(intent)
         }
 
         btnCheck=findViewById(R.id.btnCheck)
         btnCheck.setOnClickListener {
-            val intent=Intent(this,Feedback::class.java)
+            val intent= Intent(this,Feedback::class.java)
             startActivity(intent)
         }
 
-        btnView=findViewById(R.id.btnView)
+//        btnView=findViewById(R.id.btnView)
+//        btnView.setOnClickListener {
+//            val intent= Intent(this,Products::class.java)
+//            startActivity(intent)
+//        }
+
         btnView.setOnClickListener {
-            val intent=Intent(this,Products::class.java)
+            val intent = Intent(this, Products::class.java)
             startActivity(intent)
         }
     }
+
 }

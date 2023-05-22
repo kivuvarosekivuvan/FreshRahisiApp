@@ -12,7 +12,7 @@ class Customer : AppCompatActivity() {
         setContentView(R.layout.activity_customer)
         btnConfirm=findViewById(R.id.btnConfirm)
         btnConfirm.setOnClickListener {
-            val intent=Intent(this,LandingPage::class.java)
+            val intent=Intent(this,Admin_Landing::class.java)
             startActivity(intent)
         }
     }
