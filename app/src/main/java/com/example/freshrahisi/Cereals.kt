@@ -23,6 +23,7 @@ class Cereals : AppCompatActivity() {
             startActivity(intent2)
         }
 
+
         btnMaize2 = findViewById(R.id.btnMaize2)
         btnMaize2.setOnClickListener {
             val intent2 = Intent(this, Cart::class.java)
