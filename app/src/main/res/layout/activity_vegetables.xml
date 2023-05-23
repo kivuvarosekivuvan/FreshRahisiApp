@@ -13,7 +13,7 @@
         android:layout_width="111dp"
         android:layout_height="38dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="#FFC107"
         android:text="Add to cart"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,25 +36,21 @@
 
     <ImageView
         android:id="@+id/ivTomatoes"
-        android:layout_width="177dp"
+        android:layout_width="164dp"
         android:layout_height="120dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="232dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvVegetable"
+        app:layout_constraintTop_toTopOf="@+id/ivSukuma"
         app:srcCompat="@drawable/tomatoes" />
 
     <ImageView
         android:id="@+id/ivSukuma"
         android:layout_width="164dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="52dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="61dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ivTomatoes"
         app:layout_constraintTop_toBottomOf="@+id/tvVegetable"
         app:srcCompat="@drawable/sukuma" />
@@ -63,8 +59,8 @@
         android:id="@+id/tvKg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="309dp"
         android:text="1Kg tomatoes  "
         android:textColor="#131313"
@@ -78,7 +74,7 @@
         android:id="@+id/tvPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="305dp"
         android:text="Price :200"
@@ -93,7 +89,7 @@
         android:id="@+id/tvDiscount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="278dp"
         android:text="Discount : 5%"
@@ -109,13 +105,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="23dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
         android:text="Bunch Sukuma"
         android:textColor="#070707"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toEndOf="@+id/tvKg"
         app:layout_constraintTop_toBottomOf="@+id/ivSukuma" />
 
@@ -124,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="186dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="53dp"
         android:text="price : 200"
         android:textColor="#070707"
@@ -138,38 +134,32 @@
         android:id="@+id/tvDiscount2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="24dp"
         android:text="Discount : 1%"
         android:textColor="#070707"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
-        app:layout_constraintStart_toEndOf="@+id/tvDiscount"
         app:layout_constraintTop_toBottomOf="@+id/tvPrice2" />
 
     <Button
         android:id="@+id/btnAddToCart"
         android:layout_width="111dp"
         android:layout_height="38dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="252dp"
+        android:layout_marginStart="24dp"
         android:backgroundTint="#FFC107"
         android:text="Add to cart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDiscount2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAddToCart3" />
 
-    <Button
+    <ImageView
         android:id="@+id/btnBack1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#0D3CCA"
-        android:text="BACK"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:layout_editor_absoluteX="41dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

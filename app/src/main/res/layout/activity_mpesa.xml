@@ -6,18 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".Mpesa">
 
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#038309"
+        android:text="SUBMIT"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilPin" />
+
     <TextView
         android:id="@+id/tvmpesa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="87dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="87dp"
         android:text="Mpesa"
         android:textColor="#038309"
         android:textSize="54sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,31 +55,25 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="171dp"
-        android:backgroundTint="#038309"
-        android:text="SUBMIT"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#F44336"
+        android:text="CANCEL"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilPin" />
+        app:layout_constraintTop_toTopOf="@+id/btnSubmit" />
 
-    <Button
+    <ImageView
         android:id="@+id/btnBackdelivery"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="276dp"
-        android:text="BACK"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvmpesa"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSubmit" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

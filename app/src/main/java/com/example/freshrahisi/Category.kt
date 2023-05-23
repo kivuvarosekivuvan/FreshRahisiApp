@@ -9,10 +9,10 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class Category : AppCompatActivity() {
-lateinit var btnBack9: Button
+lateinit var btnBack9: ImageView
     lateinit var ivLogo : ImageView
     lateinit var tvCategories : TextView
-    lateinit var ivVegetables : ImageView
+    lateinit var ivVegetables:  ImageView
     lateinit var ivFruits : ImageView
     lateinit var ivCereals : ImageView
     lateinit var ivSpices : ImageView

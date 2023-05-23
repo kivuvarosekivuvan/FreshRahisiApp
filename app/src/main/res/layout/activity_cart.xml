@@ -7,19 +7,6 @@
     android:background="#ECE5E5"
     tools:context=".Cart">
 
-    <ImageView
-        android:id="@+id/ivLogo8"
-        android:layout_width="260dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="-60dp"
-        android:layout_marginEnd="-70dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/log" />
-
     <TextView
         android:id="@+id/tvMyCart"
         android:layout_width="211dp"
@@ -82,8 +69,8 @@
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="136dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="116dp"
         android:text="item :1Kg tomatoes"
         android:textColor="#0B0A0A"
         android:textSize="24sp"
@@ -109,13 +96,11 @@
         android:id="@+id/tvQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="252dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="20dp"
         android:text="Quantity:"
         android:textColor="#040303"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
@@ -123,12 +108,12 @@
         android:id="@+id/tvTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="Total price : 200"
         android:textColor="#020202"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintHorizontal_bias="0.373"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvQuantity" />
 
@@ -136,25 +121,24 @@
         android:id="@+id/btnRemove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="90dp"
         android:backgroundTint="#FA2525"
         android:text="Remove"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintEnd_toStartOf="@+id/btnCheckout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTotal" />
+        app:layout_constraintTop_toTopOf="@+id/btnCheckout" />
 
     <Button
         android:id="@+id/btnCheckout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="85dp"
         android:backgroundTint="#FFC107"
         android:text="Checkout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRemove" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnPlus"
@@ -185,16 +169,14 @@
         app:layout_constraintStart_toEndOf="@+id/btnPlus"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
-    <Button
+    <ImageView
         android:id="@+id/backCart"
-        android:layout_width="69dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="16dp"
-        android:text="Back"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/tvMyCart"
-        app:layout_constraintHorizontal_bias="0.253"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

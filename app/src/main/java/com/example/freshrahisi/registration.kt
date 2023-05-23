@@ -10,7 +10,7 @@ class registration : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
-        btnSubmit=findViewById(R.id.btnSubmit)
+        btnSubmit=findViewById(R.id.btnCancel)
         btnSubmit.setOnClickListener {
             var intent= Intent( this, MamaMboga::class.java)
             startActivity(intent)

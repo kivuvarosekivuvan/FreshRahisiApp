@@ -15,7 +15,7 @@ class Login : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnSignup1.setOnClickListener {
-            val intent = Intent(this@Login, Signup::class.java)
+            val intent = Intent(this, Signup::class.java)
             startActivity(intent)
         }
         binding.btnLogIn.setOnClickListener {
@@ -50,8 +50,8 @@ class Login : AppCompatActivity() {
     }
 
     fun clearErrors() {
-        binding.tilEmail.error = null
-        binding.tilPassword.error = null
+        binding.etEmail.error = null
+        binding.etPassword.error = null
 
     }
 }
