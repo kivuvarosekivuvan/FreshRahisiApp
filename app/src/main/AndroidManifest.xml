@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FreshRahisi"
         tools:targetApi="31">
         <activity
+            android:name=".last"
+            android:exported="false" />
+        <activity
             android:name=".MamaMboga"
             android:exported="false">
             <meta-data
