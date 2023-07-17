@@ -4,73 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D6E167"
+    android:background="#8BC34A"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="188dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="25dp"
         android:text="Welcome to FreshRahisi!"
         android:textColor="#1D7721"
-        android:textSize="34sp"
+        android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="260dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="-290dp"
-        android:layout_marginTop="-60dp"
+        android:layout_width="296dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="228dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo1" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="-80dp"
+        android:layout_width="293dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="59dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/m" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="140dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.714"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/v" />
+        app:srcCompat="@drawable/m" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="-50dp"
-        android:layout_marginEnd="202dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
         android:text="Buy groceries easily with us."
         android:textColor="#0B0A0A"
-        android:textSize="28sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -78,28 +66,28 @@
         android:id="@+id/textView3"
         android:layout_width="284dp"
         android:layout_height="62dp"
-        android:layout_marginStart="87dp"
-        android:layout_marginTop="-15dp"
-        android:text="We deliver fresh and instantly.                                                               We value our customers' need"
-        android:textColor="#1B1A1A"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="84dp"
+        android:text="&quot;We deliver fresh and instantly.   &quot;                                                           &quot; We value our customers' need&quot;"
+        android:textColor="#070707"
         android:textSize="19sp"
-        android:textStyle="italic"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/get"
         android:layout_width="212dp"
         android:layout_height="55dp"
-        android:layout_marginStart="153dp"
-        android:layout_marginEnd="164dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="87dp"
         android:backgroundTint="#4AEC06"
         android:text="Get started"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 

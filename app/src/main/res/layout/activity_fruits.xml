@@ -9,39 +9,32 @@
 
     <Button
         android:id="@+id/btnOrange2"
-        android:layout_width="135dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="142dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="29dp"
         android:backgroundTint="#FFC107"
         android:text="Add to cart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDiscount4" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDiscount3" />
 
     <ImageView
         android:id="@+id/ivBanana"
-        android:layout_width="133dp"
-        android:layout_height="146dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="-20dp"
-        app:layout_constraintEnd_toStartOf="@+id/ivOrange"
+        android:layout_width="137dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivOrange"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:srcCompat="@drawable/banana" />
 
     <ImageView
         android:id="@+id/ivOrange"
-        android:layout_width="163dp"
-        android:layout_height="141dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="118dp"
-        android:layout_marginEnd="11dp"
+        android:layout_width="153dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivBanana"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:srcCompat="@drawable/oranges" />
 
@@ -49,8 +42,8 @@
         android:id="@+id/tvBanana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="306dp"
         android:text="1Kg Banana"
         android:textColor="#070707"
@@ -64,14 +57,14 @@
         android:id="@+id/tvPrice3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="321dp"
         android:text="Price : 200"
         android:textColor="#070707"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBanana" />
 
@@ -81,11 +74,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="290dp"
         android:text="Discount : 5%"
         android:textColor="#070707"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPrice3" />
 
@@ -93,59 +84,47 @@
         android:id="@+id/tvOrange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="38dp"
         android:text="1Kg Oranges"
         android:textColor="#040303"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvBanana"
         app:layout_constraintTop_toBottomOf="@+id/ivOrange" />
 
     <TextView
         android:id="@+id/tvPrice4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="223dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="38dp"
         android:text="Price : 100"
         android:textColor="#101010"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
-        app:layout_constraintStart_toEndOf="@+id/tvPrice3"
         app:layout_constraintTop_toBottomOf="@+id/tvOrange" />
 
     <TextView
         android:id="@+id/tvDiscount4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="183dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="38dp"
         android:text="Discount : 10%"
         android:textColor="#0C0C0C"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvDiscount3"
         app:layout_constraintTop_toBottomOf="@+id/tvPrice4" />
 
     <Button
         android:id="@+id/btnOrange"
-        android:layout_width="135dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="136dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="18dp"
         android:backgroundTint="#FFC107"
         android:text="Add to cart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDiscount4" />
 
     <Button
@@ -154,23 +133,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#575353"
         android:text="Back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
+        android:layout_width="132dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="87dp"
+        android:layout_marginEnd="16dp"
         android:text="Fruits"
         android:textColor="#195314"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/ivOrange"
-        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
