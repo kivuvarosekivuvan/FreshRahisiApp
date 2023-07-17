@@ -9,58 +9,48 @@
 
     <Button
         android:id="@+id/btnMaize2"
-        android:layout_width="142dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="144dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#FFC107"
         android:text="add to cart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDiscount5" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDiscount6" />
 
     <TextView
         android:id="@+id/tvCereal"
         android:layout_width="230dp"
         android:layout_height="58dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="80dp"
         android:layout_marginEnd="100dp"
         android:text="Cereals"
         android:textAlignment="center"
         android:textColor="#195314"
-        android:textSize="48sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBack3" />
 
     <ImageView
         android:id="@+id/ivMaize"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="252dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_width="142dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCereal"
         app:srcCompat="@drawable/maize" />
 
     <ImageView
         android:id="@+id/ivWheat"
-        android:layout_width="150dp"
-        android:layout_height="155dp"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="114dp"
+        android:layout_width="138dp"
+        android:layout_height="90dp"
         android:layout_marginEnd="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMaize"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/ivMaize"
-        app:layout_constraintTop_toBottomOf="@+id/tvCereal"
         app:srcCompat="@drawable/wheat" />
 
     <TextView
@@ -81,7 +71,8 @@
         android:id="@+id/tvWheat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="30dp"
         android:text="1Kg Wheat"
         android:textColor="#050505"
@@ -94,14 +85,11 @@
         android:id="@+id/tvPrice5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="301dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
         android:text="Price : 50"
         android:textColor="#050505"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMaize" />
 
@@ -109,15 +97,12 @@
         android:id="@+id/tvPrice6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
         android:text="Price : 60"
         android:textColor="#020202"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toEndOf="@+id/tvPrice5"
         app:layout_constraintTop_toBottomOf="@+id/tvWheat" />
 
     <TextView
@@ -125,13 +110,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="272dp"
         android:text="Discount : 4%"
         android:textColor="#090909"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintHorizontal_bias="0.351"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPrice5" />
 
@@ -146,21 +131,18 @@
         android:textColor="#070707"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/tvDiscount5"
         app:layout_constraintTop_toBottomOf="@+id/tvPrice6" />
 
     <Button
         android:id="@+id/btnMaize"
-        android:layout_width="142dp"
-        android:layout_height="40dp"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="190dp"
         android:backgroundTint="#FFC107"
         android:text="add to cart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDiscount5" />
 
@@ -168,7 +150,9 @@
         android:id="@+id/btnBack3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6E6C6C"
         android:text="Back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

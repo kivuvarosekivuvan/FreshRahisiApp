@@ -7,55 +7,41 @@
     android:background="#ECE5E5"
     tools:context=".Category">
 
-    <ImageView
-        android:id="@+id/ivLogo"
-        android:layout_width="260dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="-260dp"
-        android:layout_marginTop="-60dp"
-        android:layout_marginEnd="6dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/log" />
-
     <TextView
         android:id="@+id/tvCategories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="217dp"
         android:text="Categories"
         android:textColor="#195314"
-        android:textSize="48sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ivVegetables"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="154dp"
+        android:layout_height="114dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="252dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCategories"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
         app:srcCompat="@drawable/veg" />
 
     <ImageView
         android:id="@+id/ivFruits"
-        android:layout_width="143dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="130dp"
+        android:layout_width="147dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ivCereals"
         app:layout_constraintTop_toBottomOf="@+id/tvSpices"
         app:srcCompat="@drawable/fruit" />
@@ -63,10 +49,9 @@
     <ImageView
         android:id="@+id/ivCereals"
         android:layout_width="150dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginEnd="117dp"
-        app:layout_constraintEnd_toStartOf="@+id/ivFruits"
+        android:layout_height="144dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVegetables"
         app:srcCompat="@drawable/cereals" />
@@ -76,11 +61,12 @@
         android:layout_width="164dp"
         android:layout_height="88dp"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="38dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ivVegetables"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
         app:srcCompat="@drawable/spices" />
 
     <TextView
@@ -88,14 +74,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
-        android:layout_marginEnd="283dp"
+        android:layout_marginTop="16dp"
         android:text="Vegetables"
         android:textColor="#0C0C0C"
         android:textColorHint="#050505"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivVegetables" />
 
@@ -103,15 +87,13 @@
         android:id="@+id/tvFruits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="157dp"
-        android:layout_marginEnd="68dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="84dp"
         android:text="Fruits"
         android:textColor="#090909"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvVegetables"
         app:layout_constraintTop_toBottomOf="@+id/ivFruits" />
 
     <TextView
@@ -120,13 +102,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="-8dp"
-        android:layout_marginEnd="289dp"
         android:text="Cereals"
         android:textColor="#050505"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivCereals" />
 
@@ -134,16 +113,13 @@
         android:id="@+id/tvSpices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="192dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="80dp"
         android:text="Spices"
         android:textColor="#0B0A0A"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvCereals"
         app:layout_constraintTop_toBottomOf="@+id/ivSpices" />
 
     <Button
@@ -151,28 +127,32 @@
         android:layout_width="194dp"
         android:layout_height="55dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
         android:backgroundTint="#FFC107"
         android:text="Reviews"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSpices" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCereals" />
 
     <SearchView
-        android:layout_width="316dp"
-        android:layout_height="52dp"
+        android:id="@+id/searchView"
+        android:layout_width="293dp"
+        android:layout_height="37dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="9dp"
         android:layout_marginEnd="1dp"
+        android:layout_marginBottom="30dp"
+        android:background="#DDD1D1"
         android:clickable="true"
         android:outlineProvider="paddedBounds"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ivVegetables"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintHorizontal_bias="0.637"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCategories" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

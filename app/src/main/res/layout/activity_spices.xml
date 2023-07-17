@@ -9,10 +9,10 @@
 
     <TextView
         android:id="@+id/tvSpice"
-        android:layout_width="164dp"
-        android:layout_height="48dp"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="150dp"
         android:text="Spices"
         android:textAlignment="center"
@@ -21,47 +21,37 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBack4" />
 
     <ImageView
         android:id="@+id/ivBlack"
         android:layout_width="129dp"
         android:layout_height="114dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginEnd="262dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSpice"
         app:srcCompat="@drawable/bl" />
 
     <ImageView
         android:id="@+id/ivTumeric"
-        android:layout_width="170dp"
+        android:layout_width="129dp"
         android:layout_height="98dp"
-        android:layout_marginStart="74dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBlack"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/ivBlack"
-        app:layout_constraintTop_toBottomOf="@+id/tvSpice"
         app:srcCompat="@drawable/tumr" />
 
     <TextView
         android:id="@+id/tvBlack2"
         android:layout_width="159dp"
         android:layout_height="35dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="33dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="284dp"
         android:text="1kg black pepper"
         android:textColor="#090909"
         android:textIsSelectable="true"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivBlack" />
 
@@ -70,13 +60,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="49dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="296dp"
+        android:layout_marginTop="20dp"
         android:text="Price : 500"
         android:textColor="#090909"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBlack2" />
 
@@ -84,14 +71,11 @@
         android:id="@+id/tvDiscount7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="271dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
         android:text="Discount : 20%"
         android:textColor="#020202"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPrice7" />
 
@@ -99,54 +83,50 @@
         android:id="@+id/tvTumeric"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="135dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
         android:text="1Kg Tumeric"
         android:textColor="#070707"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.795"
-        app:layout_constraintStart_toEndOf="@+id/tvBlack2"
         app:layout_constraintTop_toBottomOf="@+id/ivTumeric" />
 
     <TextView
         android:id="@+id/tvPrice8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="48dp"
         android:text="Price : 400"
         android:textColor="#040303"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toEndOf="@+id/tvPrice7"
         app:layout_constraintTop_toBottomOf="@+id/tvTumeric" />
 
     <TextView
         android:id="@+id/tvDiscount8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="276dp"
+        android:layout_marginStart="65dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="47dp"
+        android:layout_marginEnd="33dp"
         android:text="Discount: 10%"
         android:textColor="#0B0A0A"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvDiscount7"
         app:layout_constraintTop_toBottomOf="@+id/tvPrice8" />
 
     <Button
         android:id="@+id/btnPepper"
         android:layout_width="137dp"
         android:layout_height="53dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#FFC107"
         android:text="add to cart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDiscount7" />
 
@@ -155,21 +135,22 @@
         android:layout_width="137dp"
         android:layout_height="53dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="-8dp"
+        android:layout_marginTop="19dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#FFC107"
         android:text="add to cart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDiscount7" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDiscount8" />
 
     <Button
         android:id="@+id/btnBack4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#736F6F"
         android:text="Back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
